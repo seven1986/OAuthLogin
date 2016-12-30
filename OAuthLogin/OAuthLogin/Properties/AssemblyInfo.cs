@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("OAuthLogin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("第三方平台联合登陆（facebook、微信、微博、QQ）")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("OAuthLogin")]

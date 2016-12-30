@@ -107,8 +107,6 @@ namespace OAuthLogin
                     return null;
                 }
             }
-
-            return null;
         }
 
         private JObject UserInfo(string token, ref string errMsg)

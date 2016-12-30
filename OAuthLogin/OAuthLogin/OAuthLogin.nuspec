@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="$version$">
-        <id>OAuthLogin</id>
+        <id>$id$</id>
         <title>第三方平台联合登陆</title>
         <version>$version$</version>
         <authors>Seven</authors>
@@ -10,7 +10,7 @@
         <iconUrl>https://raw.githubusercontent.com/seven1986/OAuthLogin/master/OAuthLogin/OAuthLogin/icon.png</iconUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <developmentDependency>true</developmentDependency>
-        <description>第三方平台联合登陆（facebook、微信、微博、QQ）</description>
+        <description>$description$</description>
         <language>zh-CN</language>
         <tags>第三方登陆 微信 微博 qq facebook</tags>
         <dependencies>
