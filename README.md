@@ -1,5 +1,7 @@
 # OAuthLogin [![Build status](https://ci.appveyor.com/api/projects/status/i37i1sd16y31sa30?svg=true)](https://ci.appveyor.com/project/seven1986/oauthlogin-u3622) [![NuGet](https://img.shields.io/nuget/v/OAuthLogin.svg)](https://www.nuget.org/packages/OAuthLogin) [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/seven1986/OAuthLogin/master/LICENSE)
 
+[![Join the chat at https://gitter.im/OAuthLogin/Lobby](https://badges.gitter.im/OAuthLogin/Lobby.svg)](https://gitter.im/OAuthLogin/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Installation
 -------------
@@ -14,7 +16,7 @@ PM> Install-Package OAuthLogin
 Usage
 ------
 
-第一步：在Global.asax配置微博、微信、QQ、facebook的client_id、client_secret
+绗竴姝ワ細鍦℅lobal.asax閰嶇疆寰崥銆佸井淇°�丵Q銆乫acebook鐨刢lient_id銆乧lient_secret
 
 ```csharp
 protected void Application_Start(object sender, EventArgs e)
@@ -29,7 +31,7 @@ protected void Application_Start(object sender, EventArgs e)
         }
 ```
 
-第二步：在项目根目录分别新建QQ.aspx、Wechat.aspx、Webo.aspx、Facebook.aspx文件
+绗簩姝ワ細鍦ㄩ」鐩牴鐩綍鍒嗗埆鏂板缓QQ.aspx銆乄echat.aspx銆乄ebo.aspx銆丗acebook.aspx鏂囦欢
 
 ##### QQ.aspx
 
@@ -40,7 +42,7 @@ protected void Application_Start(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
 
             }
@@ -56,7 +58,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -71,7 +73,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -86,7 +88,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null&& res.code==0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
