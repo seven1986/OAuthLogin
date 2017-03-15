@@ -33,5 +33,11 @@
             FaceBook_client_id = client_id;
             FaceBook_client_secret = client_secret;
         }
+
+        internal static string Kakao_client_id = string.Empty;
+        public static void UseKakao(string client_id)
+        {
+            Kakao_client_id = client_id;
+        }
     }
 }

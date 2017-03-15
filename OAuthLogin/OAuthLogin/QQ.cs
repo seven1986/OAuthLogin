@@ -10,14 +10,13 @@ namespace OAuthLogin
 {
    public class QQ:LoginBase
     {
+        static string authorize_url = "https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=" + LoginProvider.qq_client_id + "&redirect_uri=";
 
-        string authorize_url = "https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=" + LoginProvider.qq_client_id + "&redirect_uri=";
+        static string oauth_url = "https://graph.qq.com/oauth2.0/token?";
 
-        string oauth_url = "https://graph.qq.com/oauth2.0/token?";
+        static string openid_url = "https://graph.qq.com/oauth2.0/me?access_token=";
 
-        string openid_url = "https://graph.qq.com/oauth2.0/me?access_token=";
-
-        string user_info_url = "https://graph.qq.com/user/get_user_info?format=json&oauth_consumer_key=" + LoginProvider.qq_client_id
+        static string user_info_url = "https://graph.qq.com/user/get_user_info?format=json&oauth_consumer_key=" + LoginProvider.qq_client_id
                                     + "&openid={0}&access_token={1}";
 
         public AuthorizeResult Authorize()
