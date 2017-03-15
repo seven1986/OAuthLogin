@@ -8,13 +8,13 @@ using System.Web;
 
 namespace OAuthLogin
 {
-   public class Weibo:LoginBase
+    public class Weibo : LoginBase
     {
-        string authorize_url = "https://api.weibo.com/oauth2/authorize?client_id=" + LoginProvider.Weibo_client_id + "&response_type=code&redirect_uri=";
+        static string authorize_url = "https://api.weibo.com/oauth2/authorize?client_id=" + LoginProvider.Weibo_client_id + "&response_type=code&redirect_uri=";
 
-        string oauth_url = "https://api.weibo.com/oauth2/access_token?";
+        static string oauth_url = "https://api.weibo.com/oauth2/access_token?";
 
-        string user_info_url = "https://api.weibo.com/2/users/show.json?uid={0}&access_token={1}";
+        static string user_info_url = "https://api.weibo.com/2/users/show.json?uid={0}&access_token={1}";
 
         public AuthorizeResult Authorize()
         {
@@ -24,7 +24,7 @@ namespace OAuthLogin
 
                 if (string.IsNullOrEmpty(code))
                 {
-                    HttpContext.Current.Response.Redirect(authorize_url + HttpUtility.UrlEncode(redirect_uri),true);
+                    HttpContext.Current.Response.Redirect(authorize_url + HttpUtility.UrlEncode(redirect_uri), true);
 
                     HttpContext.Current.Response.End();
 

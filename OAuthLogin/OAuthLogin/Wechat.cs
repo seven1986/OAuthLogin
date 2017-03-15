@@ -10,11 +10,11 @@ namespace OAuthLogin
 {
    public class Wechat:LoginBase
     {
-        string authorize_url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +LoginProvider.Wechat_client_id + "&redirect_uri={0}&response_type=code&scope=snsapi_userinfo#wechat_redirect";
+        static string authorize_url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +LoginProvider.Wechat_client_id + "&redirect_uri={0}&response_type=code&scope=snsapi_userinfo#wechat_redirect";
 
-        string oauth_url = "https://api.weixin.qq.com/sns/oauth2/access_token?";
+        static string oauth_url = "https://api.weixin.qq.com/sns/oauth2/access_token?";
 
-        string user_info_url = "https://api.weixin.qq.com/sns/userinfo?access_token={0}&openid={1}&lang=zh_CN";
+        static string user_info_url = "https://api.weixin.qq.com/sns/userinfo?access_token={0}&openid={1}&lang=zh_CN";
 
         public AuthorizeResult Authorize()
         {
