@@ -9,11 +9,16 @@ OAuthLogin is available as a NuGet package. You can install it using the NuGet P
 PM> Install-Package OAuthLogin
 ```
 
+---
+
+If you are looking for the ASP.NET Core version please head to [OAuthLogin.AspNetCore](https://github.com/seven1986/OAuthLogin.AspNetCore) project.
+
+---
 
 Usage
 ------
 
-第一步：在Global.asax配置微博、微信、QQ、facebook、Kakao的client_id、client_secret
+绗竴姝ワ細鍦℅lobal.asax閰嶇疆寰崥銆佸井淇°�丵Q銆乫acebook銆並akao鐨刢lient_id銆乧lient_secret
 
 ```csharp
 protected void Application_Start(object sender, EventArgs e)
@@ -30,7 +35,7 @@ protected void Application_Start(object sender, EventArgs e)
         }
 ```
 
-第二步：在项目根目录分别新建QQ.aspx、Wechat.aspx、Webo.aspx、Facebook.aspx文件
+绗簩姝ワ細鍦ㄩ」鐩牴鐩綍鍒嗗埆鏂板缓QQ.aspx銆乄echat.aspx銆乄ebo.aspx銆丗acebook.aspx鏂囦欢
 
 ##### QQ.aspx
 
@@ -41,7 +46,7 @@ protected void Application_Start(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -56,7 +61,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -71,7 +76,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null && res.code == 0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -86,7 +91,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null && res.code==0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
@@ -101,7 +106,7 @@ protected void Page_Load(object sender, EventArgs e)
 
             if (res != null&& res.code==0)
             {
-                //拿到结果数据，然后进行自定义跳转
+                //鎷垮埌缁撴灉鏁版嵁锛岀劧鍚庤繘琛岃嚜瀹氫箟璺宠浆
                 //res.result
             }
         }
